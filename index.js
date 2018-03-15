@@ -67,7 +67,7 @@ exports.handler = function (event, context, callback) {
 var sloganHandle = Alexa.CreateStateHandler(SKILL_STATES.SLOGAN, {
     "slogan": function () {
       
-        var sloganNumber = Math.floor((Math.random() * slogan.length));
+        var sloganNumber = Math.floor((Math.random() * slogans.length));
 
         var speechout = util.format(slogans[greetingsNumber]); 
     
