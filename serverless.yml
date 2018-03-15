@@ -1,4 +1,4 @@
-service: alexa-sport-generator
+service: alexa-slogan-generator
 
 provider:
   name: aws
