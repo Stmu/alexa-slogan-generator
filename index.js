@@ -59,12 +59,12 @@ var util = require('util');
 exports.handler = function (event, context, callback) {
     const alexa = Alexa.handler(event, context, callback);
     alexa.appId = APP_ID // APP_ID is your skill id which can be found in the Amazon developer console where you create the skill.
-    alexa.registerHandlers(newSessionHandlers, sportHandler);
+    alexa.registerHandlers(newSessionHandlers, sloganHandle);
     
     alexa.execute();
 };
 
-var sportHandler = Alexa.CreateStateHandler(SKILL_STATES.SPORT, {
+var sloganHandle = Alexa.CreateStateHandler(SKILL_STATES.SLOGAN, {
     "slogan": function () {
       
         var sloganNumber = Math.floor((Math.random() * slogan.length));
