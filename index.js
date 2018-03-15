@@ -69,7 +69,7 @@ var sloganHandle = Alexa.CreateStateHandler(SKILL_STATES.SLOGAN, {
       
         var sloganNumber = Math.floor((Math.random() * slogans.length));
 
-        var speechout = util.format(slogans[greetingsNumber]); 
+        var speechout = util.format(slogans[sloganNumber]); 
     
         this.emit(':tell', speechout);
     }   
